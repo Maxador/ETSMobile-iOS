@@ -18,6 +18,13 @@
         <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Consommation" representedClassName="ETSConsommation" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="download" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idChambre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="upload" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
     <entity name="Contact" representedClassName="ETSContact" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ext" optional="YES" attributeType="String" syncable="YES"/>
@@ -157,5 +164,6 @@
         <element name="Profile" positionX="81" positionY="-171" width="128" height="180"/>
         <element name="Program" positionX="243" positionY="-37" width="128" height="253"/>
         <element name="Session" positionX="-110" positionY="-160" width="128" height="88"/>
+        <element name="Consommation" positionX="-234" positionY="-198" width="128" height="120"/>
     </elements>
 </model>

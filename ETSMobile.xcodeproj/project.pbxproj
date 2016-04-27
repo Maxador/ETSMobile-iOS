@@ -101,6 +101,7 @@
 		26A7E1A91ACC429900B83C5F /* ETSUniversityCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A7E1A71ACC429900B83C5F /* ETSUniversityCalendarViewController.m */; };
 		26A7E1AD1ACC42B300B83C5F /* MSEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A7E1AC1ACC42B300B83C5F /* MSEventCell.m */; };
 		26D00E311ACE3BB90062BF6F /* SecuritySources.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26D00E301ACE3BB90062BF6F /* SecuritySources.plist */; };
+		29B2D5321CBC583F00F8A3C0 /* ETSConsommation.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B2D5311CBC583F00F8A3C0 /* ETSConsommation.m */; };
 		D4EEFDACFB7EACE2E48997F8 /* libPods-ETSMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DC930BC66734E6D25C2AEF /* libPods-ETSMobile.a */; };
 		E9EE856B1B99EFEE0074FAB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9EE856A1B99EFEE0074FAB3 /* CoreGraphics.framework */; };
 		E9EE856C1B99EFF30074FAB3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264187291AB77B9D0027561B /* CoreTelephony.framework */; };
@@ -303,6 +304,9 @@
 		26B1E7D51AF93A9E00D10273 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		26B1E7D61AF93A9E00D10273 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26D00E301ACE3BB90062BF6F /* SecuritySources.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = SecuritySources.plist; path = "Supporting Files/SecuritySources.plist"; sourceTree = "<group>"; };
+		29B2D5301CBC582800F8A3C0 /* ETSConsommation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETSConsommation.h; sourceTree = "<group>"; };
+		29B2D5311CBC583F00F8A3C0 /* ETSConsommation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETSConsommation.m; path = Models/ETSConsommation.m; sourceTree = "<group>"; };
+		29B2D5331CBC5C9800F8A3C0 /* ETSMobile 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ETSMobile 2.xcdatamodel"; sourceTree = "<group>"; };
 		E9EE856A1B99EFEE0074FAB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E9EE856D1B99EFFC0074FAB3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		E9EE856F1B99F0030074FAB3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -676,6 +680,8 @@
 				264187391AB77E770027561B /* ETSBandwidth.m */,
 				264187351AB77E770027561B /* ETSEvaluation.h */,
 				264187361AB77E770027561B /* ETSEvaluation.m */,
+				29B2D5301CBC582800F8A3C0 /* ETSConsommation.h */,
+				29B2D5311CBC583F00F8A3C0 /* ETSConsommation.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1085,6 +1091,7 @@
 				265008DD1AD056490033FB64 /* ETSCourseCell.m in Sources */,
 				26A7E1AD1ACC42B300B83C5F /* MSEventCell.m in Sources */,
 				265008CF1AD056170033FB64 /* ETSCoursesViewController.m in Sources */,
+				29B2D5321CBC583F00F8A3C0 /* ETSConsommation.m in Sources */,
 				2602450F1ACA53E5001B57C3 /* ETSAboutViewController.m in Sources */,
 				1D50F93D1ACC76FD00B06561 /* ETSSecurityProcedureViewController.m in Sources */,
 				1DDF27101AD5AF7B00D1A7DA /* ETSMoodleResultViewCell.m in Sources */,
@@ -1350,9 +1357,10 @@
 		264186F41AB779F40027561B /* ETSMobile.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				29B2D5331CBC5C9800F8A3C0 /* ETSMobile 2.xcdatamodel */,
 				264186F51AB779F40027561B /* ETSMobile.xcdatamodel */,
 			);
-			currentVersion = 264186F51AB779F40027561B /* ETSMobile.xcdatamodel */;
+			currentVersion = 29B2D5331CBC5C9800F8A3C0 /* ETSMobile 2.xcdatamodel */;
 			path = ETSMobile.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

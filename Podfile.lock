@@ -1,6 +1,6 @@
 PODS:
   - AMScrollingNavbar (1.5.1)
-  - Crashlytics (3.6.0):
+  - Crashlytics (3.7.0):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.3)
   - MSCollectionViewCalendarLayout (0.1.5)
@@ -25,7 +25,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AMScrollingNavbar: 767ed2db60d927a809bddff5d01b739b7020b12b
-  Crashlytics: e4e8d02914f2608fbc7bf42b1a7af838b0db67a2
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
   Fabric: cbe0ca6c9531bba17910052f6f105fcbc5fa7f67
   MSCollectionViewCalendarLayout: 9c52894930d6b712951f18873618fc32c00cd4fa
   MSDynamicsDrawerViewController: 2874df90f5e9453dc7d4e32f8038b50615d4baa7

@@ -98,12 +98,14 @@
         // FIXME: traiter si data est vide ou s'il y a erreur
         if (!data || [data length] == 0 || error) return;
         
-     //   NSLog(@"%@", [NSString stringWithUTF8String:[data bytes]]);
+        NSLog(@"%@", [NSString stringWithUTF8String:[data bytes]]);
 
+        //Retrieve all the JSON objects
         NSError *jsonError = nil;
         NSDictionary *jsonObjects = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&jsonError];
         
-        if ([bself.delegate respondsToSelector:@selector(synchronization:didReceiveDictionary:)]) [bself.delegate synchronization:bself didReceiveDictionary:jsonObjects];
+        if ([bself.delegate respondsToSelector:@selector(synchronization:didReceiveDictionary:)])
+            [bself.delegate synchronization:bself didReceiveDictionary:jsonObjects];
 
         if ([bself.delegate respondsToSelector:@selector(synchronization:validateJSONResponse:)]) {
             
