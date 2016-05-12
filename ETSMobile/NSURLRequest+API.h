@@ -21,6 +21,7 @@
 + (id)requestForEvalEnseignement;
 + (id)requestForDirectory;
 + (id)requestForNewsWithSources:(NSArray *)sources;
++ (id)requestForNewsSources;
 + (id)requestForRadio;
 + (id)requestForUniversityCalendarStart:(NSDate *)start end:(NSDate *)end;
 + (id)requestForBandwidthWithResidence:(NSString *)residence phase:(NSString *)phase;

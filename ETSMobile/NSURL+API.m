@@ -89,6 +89,11 @@
     return [NSURL URLWithString:[NSString stringWithFormat:[NSURL dictionaryFromPlist][@"News"], [urls componentsJoinedByString:@","], [formatter stringFromDate:lastWeek], [formatter stringFromDate:tomorrow]]];
 }
 
++ (id)URLForNewsSources
+{
+    return [NSURL URLWithString:[NSURL dictionaryFromPlist][@"NewsSource"]];
+}
+
 + (id)URLForComment
 {
     return [NSURL URLWithString:[NSURL dictionaryFromPlist][@"Comment"]];

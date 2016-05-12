@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-	<dict>
+<dict>
 	<key>Sponsors</key>
 	<dict>
 		<key>image_url</key>
@@ -31,11 +31,11 @@
 		<key>name</key>
 		<string>name</string>
 		<key>link</key>
-		<string>url</string>
+		<string>value</string>
 		<key>group</key>
 		<string>group</string>
 		<key>id</key>
-		<string>id</string>
+		<string>key</string>
 	</dict>
 	<key>MoodleElement</key>
 	<dict>
@@ -135,19 +135,19 @@
 	<key>News</key>
 	<dict>
 		<key>thumbnailURL</key>
-		<string>image</string>
+		<string>urlPicture</string>
 		<key>link</key>
-		<string>facebook_link</string>
+		<string>link</string>
 		<key>title</key>
-		<string>title</string>
+		<string>titre</string>
 		<key>ymdDate</key>
-		<string>ymdDate</string>
+		<string>date</string>
 		<key>author</key>
-		<string>from</string>
+		<string>id_source</string>
 		<key>id</key>
 		<string>id</string>
 		<key>content</key>
-		<string>title</string>
+		<string>message</string>
 		<key>updatedDate</key>
 		<string>updated_time</string>
 	</dict>

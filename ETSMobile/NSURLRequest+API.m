@@ -79,7 +79,9 @@
     parameters[@"pDateFin"] = @"";
     
     NSError *error = nil;
-    [request setHTTPBody:[NSJSONSerialization dataWithJSONObject:parameters options:kNilOptions error:&error]];
+    [request setHTTPBody:[NSJSONSerialization dataWithJSONObject:parameters
+                                                         options:kNilOptions
+                                                           error:&error]];
     
     return request;
 }
@@ -155,6 +157,20 @@
     return request;
 }
 
++ (id)requestForNewsSources
+{
+    NSMutableURLRequest *request = [NSURLRequest JSONRequestWithURL:[NSURL URLForNewsSources]];
+    
+    [request setHTTPMethod: @"GET"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:@"UTF-8" forHTTPHeaderField:@"Accept-Charset"];
+    [request setCachePolicy: NSURLRequestReloadIgnoringCacheData];
+    
+    return request;
+    
+}
+
 + (id)requestForCommentWithName:(NSString *)name email:(NSString *)email title:(NSString *)title rating:(NSString *)rating comment:(NSString *)comment
 {
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -208,21 +224,6 @@
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request setValue:@"UTF-8" forHTTPHeaderField:@"Accept-Charset"];
     [request setCachePolicy: NSURLRequestReloadIgnoringCacheData];
-    
-   /* NSData * data = [NSURLConnection sendSynchronousRequest:request
-                                          returningResponse:nil
-                                                      error:nil];
-    
-    if (data != nil)
-    {
-        NSDictionary * sponsorDictionary = [NSJSONSerialization JSONObjectWithData:data
-                                                                           options:NSJSONReadingMutableContainers
-                                                                             error:nil];
-        if (sponsorDictionary != nil)
-        {
-            NSLog(@"%@", [sponsorDictionary description]);
-        }
-    }*/
     
     return request;
 }
