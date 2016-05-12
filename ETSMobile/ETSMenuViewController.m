@@ -70,6 +70,7 @@ NSString * const ETSDrawerHeaderReuseIdentifier = @"HeaderCell";
                                            @(ETSPaneViewControllerTypeMonets)       : NSLocalizedString(@"Mon ÉTS", nil),
                                            @(ETSPaneViewControllerTypeMoodle)       : NSLocalizedString(@"Moodle", nil),
                                            @(ETSPaneViewControllerTypeNews)         : NSLocalizedString(@"Actualités", nil),
+                                           @(ETSPaneViewControllerTypeNotifications): NSLocalizedString(@"Notifications", nil),
                                            @(ETSPaneViewControllerTypeProfile)      : NSLocalizedString(@"Profil", nil),
                                            @(ETSPaneViewControllerTypeRadio)        : NSLocalizedString(@"Radio Piranha", nil),
                                            @(ETSPaneViewControllerTypeSecurity)     : NSLocalizedString(@"Sécurité", nil),
@@ -87,6 +88,7 @@ NSString * const ETSDrawerHeaderReuseIdentifier = @"HeaderCell";
                                            @(ETSPaneViewControllerTypeMonets)       : [UIImage imageNamed:@"ico_monets"],
                                            @(ETSPaneViewControllerTypeMoodle)       : [UIImage imageNamed:@"ico_moodle"],
                                            @(ETSPaneViewControllerTypeNews)         : [UIImage imageNamed:@"ico_news"],
+                                           @(ETSPaneViewControllerTypeNotifications): [UIImage imageNamed:@"ico_new_notification"],
                                            @(ETSPaneViewControllerTypeProfile)      : [UIImage imageNamed:@"ico_profil"],
                                            @(ETSPaneViewControllerTypeRadio)        : [UIImage imageNamed:@"ico_radio"],
                                            @(ETSPaneViewControllerTypeSecurity)     : [UIImage imageNamed:@"ico_security"],
@@ -104,6 +106,7 @@ NSString * const ETSDrawerHeaderReuseIdentifier = @"HeaderCell";
                                            @(ETSPaneViewControllerTypeMonets)       : @"MonetsWebViewController",
                                            @(ETSPaneViewControllerTypeMoodle)       : @"MoodleViewController",
                                            @(ETSPaneViewControllerTypeNews)         : @"NewsViewController",
+                                           @(ETSPaneViewControllerTypeNotifications): @"NotificationsViewController",
                                            @(ETSPaneViewControllerTypeProfile)      : @"ProfileViewController",
                                            @(ETSPaneViewControllerTypeRadio)        : @"RadioViewController",
                                            @(ETSPaneViewControllerTypeSecurity)     : @"SecurityViewController",
@@ -121,7 +124,7 @@ NSString * const ETSDrawerHeaderReuseIdentifier = @"HeaderCell";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     switch (section) {
-        case 0: return 5;
+        case 0: return 6;
         case 1: return 6;
         case 2: return 3;
         default: return 0;
@@ -259,6 +262,10 @@ NSString * const ETSDrawerHeaderReuseIdentifier = @"HeaderCell";
         else if ([viewController isKindOfClass:[ETSMoodleCoursesViewController class]]) {
             splitViewController.delegate = detailsViewController;
         }
+        /*else if ([viewController isKindOfClass:[ETSNotificationsViewController class]]) {
+            splitViewController.delegate = viewController;
+            ((ETSNotificationsViewController *)viewController).splitViewController = splitViewController;
+        }*/
     }
     
     paneViewController.navigationItem.title = self.paneViewControllerTitles[@(paneViewControllerType)];
