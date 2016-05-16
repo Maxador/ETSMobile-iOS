@@ -21,6 +21,7 @@
 + (id)URLForRadio;
 + (id)URLForUniversityCalendarStart:(NSDate *)start end:(NSDate *)end;
 + (id)URLForNewsWithSources:(NSArray *)sources;
++ (id)URLForNewsSources;
 + (id)URLForComment;
 + (id)URLForBandwidthWithResidence:(NSString *)residence phase:(NSString *)phase;
 + (id)URLForSponsors;

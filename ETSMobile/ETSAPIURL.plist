@@ -13,7 +13,7 @@
 	<key>Program</key>
 	<string>https://signets-ens.etsmtl.ca/Secure/WebServices/SignetsMobile.asmx/listeProgrammes</string>
 	<key>News</key>
-	<string>https://api.clubapplets.ca/news/%@.json?post_date_min=%@&amp;post_date_max=%@</string>
+	<string>https://api3.clubapplets.ca/news/list/%@</string>
 	<key>Comment</key>
 	<string>https://api.clubapplets.ca/mail</string>
 	<key>Bandwidth</key>
@@ -32,6 +32,8 @@
 	<string>https://api3.clubapplets.ca/cooptel?phase=%@&amp;appt=%@</string>
 	<key>Sponsors</key>
 	<string>https://api3.clubapplets.ca/partners</string>
+	<key>NewsSource</key>
+	<string>https://api3.clubapplets.ca/news/sources</string>
 	<key>EvalEnseignement</key>
 	<string>https://signets-ens.etsmtl.ca/Secure/WebServices/SignetsMobile.asmx/lireEvaluationCours</string>
 </dict>
